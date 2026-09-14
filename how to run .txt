@@ -1,0 +1,24 @@
+------------------------------------
+SQL Credentials. :
+	username is :: SA
+	password ::: Password@1
+-----------------------------------
+
+
+
+
+-To start docker sql 
+	docker compose up -d 
+-To close it 
+	docker compose down
+
+
+
+-To run the .net
+	cd API
+	dotnet watch
+-To do a migration
+
+	dotnet ef migrations add InitialCreate -s API -p Infrastructure
+
+	dotnet ef database update -s API -p Infrastructure
